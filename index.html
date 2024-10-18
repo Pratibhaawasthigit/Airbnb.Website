@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb clone</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+</head>
+<body>
+    
+<header>
+    <!------------Start the navigatition bar-------->
+    <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-[10px] items-center fixed top-0 bg-white m" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+        <img src="image/airbnb-logo.png" alt="" class="h-20 w-30 "/>
+        <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+            <button class=" btn btn2 border-r-2 text-sm font-medium px-4">Anywhere</button>
+            <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+            <button class="text-sm font-medium text-gray-500 px-4">Add Guests</button>
+            <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+        </div>
+
+        <div class="flex justify-end items-center gap-8">
+            <a href=""><button class="text-sm font-medium">Airbnb your home </button></a>
+            <span class="material-symbols-outlined">language</span>
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20 py-1.25 pr-1.25 pl-2">
+                  <a href="">  <i class="fa-solid fa-bars"></i></a>
+                    
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px] font-semibold">G</button>
+                </div>
+        </div>
+    </div>
+    <!--------------------End Navigation bar-------------------->
+
+    <!----------------------Start Category---------------------->
+    <div class="flex items-center h-24 space-x-8" style="font-size: small; top: 70px;">
+        <div class="flex items-center justify-center space-x-40" style="justify-content: space-between;">
+            <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2" style="padding-left: 4rem;">
+                <a href="">
+                <img src="image/type1.jpeg" alt="" class="h-7 w-7  text-gray-400" />
+                <p class="text-xs font-normal">Amazing pool</p></a>
+            </div>
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;">
+                    <a href="">
+                    <img src="image/type2.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Play</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type3.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Historical Homes</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type4.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Countryside</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type5.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Surfing</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type6.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Farms</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type7.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Amazing views</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type8.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Rooms</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type9.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Lakefront</p>
+                </a>
+                </div>
+
+                <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                    <a href="">
+                    <img src="image/type10.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                    <p class="text-xs font-normal">Beachfront</p>
+                </a>
+                </div>
+
+            <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;margin-right: 2rem;">
+                <a href="">
+                <img src="image/type11.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                <p class="text-xs font-normal">OMG!</p>
+            </a>
+            </div>
+
+            <div class="flex flex-col items-center text-gray-300 hover:text-black gap-2" style="margin-left: 2rem;">
+                <a href="">
+                <img src="image/type12.jpeg" alt="" class="h-7 w-7 text-gray-400"/>
+                <p class="text-xs font-normal">Golfing</p>
+            </a>
+            </div>
+        </div>
+        <a href="">
+        <span class="material-symbols-outlined ">arrow_circle_right</span></a>
+        <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+           <a href=""> <span class="material-symbols-outlined pl-2">sync_alt</span>
+            <p class="text-xm font-medium pr-2">Filters</p></a>
+        </div>
+    </div>
+    <!----------------------End Category---------------------->
+    <!---------------------Price Bar Open---------------------->
+
+    <div class="flex justify-center" style="justify-content: center; margin-top: 1.5rem;">
+        <div class="flex justify-between items-center p-4 border rounded-xl w-[600px] h-16" style="border-radius: 0.75rem; width: 500px; padding: 2rem;">
+            <div class="flex justify-start">
+                <p class="border-r-2 border-gray-100 pr-4 text-base font-medium" style="margin-right: 1rem;">Display Total Price</p>
+                <p class="pl-4 text-gray-400 text-base" >Includes all fees,before taxes</p>
+            </div>
+        <span class="material-symbols-outlined" style="margin-left: 2rem;">toggle_off</span>
+        </div>
+    </div>
+</header> 
+<main style="width: 90rem; height: 90rem; margin-left: 2.5rem; margin-right: 2.5rem; margin-top: 1.5em;">
+    <div class="grid grid-cols-4" style=" display:grid; grid-template-columns: repeat(4, minmax(0, 1fr));">
+        <div class="flex flex-col" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;" >
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-400">62 Kilometers away</p>
+               <p class="text-sm text-gray-400">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-300">62 Kilometers away</p>
+               <p class="text-sm text-gray-300">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+            </div>
+               <p class="text-sm text-gray-300">62 Kilometers away</p>
+               <p class="text-sm text-gray-300">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2"  style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm text-gray-300">62 Kilometers away</p>
+               <p class="text-sm text-gray-300">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+        <div class="flex flex-col h-40 w-40" style="margin-left: 2rem; margin-right: 2rem;">
+            <img src="image/img1.jpg" alt="" class="h-40 w-40 rounded-xl" style="border-radius: 0.5rem;"/>
+            <div class="flex justify-between mt-2" style=" display:flex; justify-content: space-between; margin-top: 0.5rem;">
+                <p class="text-sm font-medium">Lonavala, India</p>
+                <div class="flex">
+                <i class="fa-solid fa-star"></i>
+                <p class="text-sm font-light">5.0</p>
+                </div>
+                
+            </div>
+               <p class="text-sm p- text-gray-300">62 Kilometers away</p>
+               <p class="text-sm text-gray-300">30 Jul- 4 Aug</p>
+               <p class="text-sm font-medium mt-2">42,701 night</p>
+        </div>
+    </div>
+</main>
+<footer style="background-color: white; box-shadow: inset 0 1.5rem 1.5rem rgba(0, 0, 0, 0.2);padding: 1.5rem;">
+   <div class="p-10 bg-gray-800 text-gray-200">
+    <div class="max-w-7xl mx-auto" style="max-width: 80rem; margin-left: auto; margin-right: auto;">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2" style="display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 2rem;">
+            <div class="mb-5">  
+                <h4 style="margin-bottom: 1rem; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Spport</h4>
+                <ul>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Help Center</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">AirCover</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Anti-discrimination</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Disability Support</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Cancellation Options</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Report neighbourhood concern</a></li>
+                </ul>
+               </div>
+               <div class="mb-5" style="margin-right: 20;">
+                <h4 style="margin-bottom: 1rem; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hosting</h4>
+                <ul>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Airbnb your home</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">AirCover for Hosts</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Hosting resources</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Community forum</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Hosting responsibly</a></li>
+                    <li style="padding-bottom: 1rem;"><a href="">Join a free Hosting class</a></li>
+                </ul>
+               </div>
+               <div class="mb-5">
+                <h4 style="margin-bottom: 1rem; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Airbnb</h4>
+                <ul>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Newsroom</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">New Feature</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Careers</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Investors</a></li>
+                    <li style="padding-bottom: 0.2rem;"><a href="">Airbnb.org emargency stay</a></li>
+                </ul>
+               </div>
+     </div>
+    </div>
+   </div>
+<div>
+   <div class="footer-copy" style="padding-left:3.5rem ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+    &copf; 2024 Airbnb,inc. 
+    <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><a href=""> . Privecy</a></li>
+    <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><a href=""> . Terms</a></li>
+    <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><a href=""> . Sitemao</a></li>
+    <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "><a href=""> . Company details</a></li>
+     <li style="padding-left: 21rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><a href=""> <span class="material-symbols-outlined">language</span></a></li>
+     <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><a href="">English (IN)</a></li>
+     <li style="padding-left: 1.5rem; display: inline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><a href="">₹INR</a></li>
+    <li style="padding-left: 1rem; display: inline;"> <a href=""><i class="fab fa-facebook"></i></a></li>
+   <li style="padding-left: 1rem; display: inline;" ><a href=""><i class="fab fa-twitter"></i></a></li>
+   <li style="padding-left: 1rem; display: inline;" ><a href=""><i class="fab fa-instagram"></i></a></li>
+</div>
+</footer>
+</body>
+</html>
